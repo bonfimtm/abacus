@@ -1,0 +1,7 @@
+{
+  "name": "abacus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
