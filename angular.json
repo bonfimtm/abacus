@@ -33,6 +33,9 @@
             ],
             "styles": [
               {
+                "input": "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              },
+              {
                 "input": "src/theme/variables.scss"
               },
               {
@@ -128,7 +131,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -174,7 +179,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@ionic/angular-toolkit"
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "0c831373-46fc-4f4d-8fe9-87073a94a733"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

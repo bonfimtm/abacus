@@ -1,0 +1,30 @@
+<ion-list>
+  <ion-item class="ion-no-padding ion-no-margin">
+    <ion-grid>
+      <ion-row [ngStyle]="{'color': color, 'border-color': color}">
+
+        <ion-col>
+          <p class="ion-no-padding ion-no-margin">{{ name}}</p>
+          <small class="ion-no-smaladding ion-no-margin">{{ description }}</small>
+        </ion-col>
+
+        <ion-col>
+          <ion-button fill="outline" shape="round" class="ion-float-left" (click)="countDown()" color="medium">
+            <i class=" fas fa-fw fa-xs fa-minus"></i>
+          </ion-button>
+        </ion-col>
+
+        <ion-col class="ion-no-padding ion-no-margin ion-text-center">
+          <p>{{ counter }}</p>
+        </ion-col>
+
+        <ion-col>
+          <ion-button fill="outline" shape="round" class="ion-float-right" (click)="countUp()" color="medium">
+            <i class=" fas fa-fw fa-plus fa-xs"></i>
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-list>
